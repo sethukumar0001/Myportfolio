@@ -239,7 +239,7 @@ function PortFolio(props) {
               Hi I'm Sethu Kumar
                  </TextDiv>
             <TextDiv1>
-              React Web Developer(React,Redux,Mobx,Html,Css,Javascript)
+              React Developer(React,Redux,Mobx,Html,Css,Javascript)
                  </TextDiv1>
           </center>
         </CardContentDiv>
