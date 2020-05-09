@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import FormControl from '@material-ui/core/FormControl';
-import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import styled from "styled-components";
-import { makeStyles } from '@material-ui/core/styles';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import BgImage from './_assets/bg3.jpg';
 import Novisync from './_assets/Novisync.png';
 import Bigapp from './_assets/bigapp.png';
@@ -144,7 +137,7 @@ margin-left:10px;
 const SideHeaderTage = styled.p`
 
 font-family:Palatino, serif;
-font-size:20px;
+font-size:18px;
 margin-right:80px;
 margin-left:33px;
 // font-weight:500px;
@@ -153,7 +146,7 @@ margin-left:33px;
 const Logo1 = styled.img`
 width : 300px;
 // float:right;
-margin-right:100px;
+margin-right:30px;
 `;
 
 const Logo2 = styled.img`
@@ -185,7 +178,7 @@ margin-top:450px
 `;
 
 const DegreeDiv = styled.div`
-
+background:white !important;
 font-family:Florence;
 font-size:18px;
 width:700px;
@@ -198,38 +191,45 @@ border-style: solid;
 `;
 
 const ImageDiv = styled.img`
-width:100px;
-margin-left:352px;
-margin-top:25px;
-position:absolute;
-border-radius:50%;
-background-color:#F1948A;
+width: 128px !important;
+height: 116px;
+position: absolute;
+margin-left: -383px;
+margin-top: 32px;
 `
 const ImageDiv2 = styled.img`
-width:100px;
-margin-left:352px;
-margin-top:25px;
-position:absolute;
-border-radius:50%;
-background-color:#FAD7A0;
+width: 128px !important;
+height: 116px;
+position: absolute;
+margin-left: -383px;
+margin-top: 32px;
 `
 const ImageDiv3 = styled.img`
-width:100px;
-margin-left:352px;
-margin-top:25px;
-position:absolute;
-border-radius:50%;
-background-color:#AED6F1;
+width: 128px !important;
+height: 116px;
+position: absolute;
+margin-left: -383px;
+margin-top: 32px;
 `
-
-const StyledCarousel = styled.div`
-background-color: white;
+const MainCarousel = styled(Carousel)`
 
 `;
+const StyledCarousel = styled.div`
+
+`;
+
+const YearTag = styled.span`
+font-family:cursive;
+margin-bottom:10px;
+float:right;
+margin-top:13px;
+// margin-right:50px;
+`
 
 function PortFolio(props) {
 
   return (
+
     <MainDiv>
       <MainCard >
         <CardContentDiv>
@@ -255,7 +255,7 @@ function PortFolio(props) {
       <Break />
 
       <TitleDiv1>
-        <Logo1 src={Bigapp} />
+        <Logo1 src={Bigapp} /><YearTag>(2020 Feb - Now)</YearTag>
         <HeaderTag1>
           Project :
             </HeaderTag1>
@@ -272,7 +272,7 @@ function PortFolio(props) {
       </TitleDiv1>
       <TitleDiv2>
 
-        <Logo2 src={Novisync} />
+        <Logo2 src={Novisync} /><YearTag>(2018 Nov - 2020 Jan)</YearTag>
         <HeaderTag1>
           Projects :
             </HeaderTag1>
@@ -318,8 +318,8 @@ function PortFolio(props) {
       </EducationDiv>
 
 
-<Carousel
-   interval={3000}
+<MainCarousel
+   interval={5000}
    showIndicators={false}
    showStatus={false}
    showThumbs={false}
@@ -328,10 +328,10 @@ function PortFolio(props) {
    autoPlay
 >
       <StyledCarousel>
-     {/* <ImageDiv src={Degree1} /> */}
+     <ImageDiv src={Degree1} />
       <DegreeDiv>    
         <center>
-            <b><p> Bachelor of technology (B. Tech)</p></b>
+            <b><p> Bachelor of technology (B. Tech) (2018)</p></b>
             <p> JNTU Ananthapur</p>
             <p> Mechanical Engineering</p>
             <p> Aggregate: 75%</p>
@@ -339,10 +339,10 @@ function PortFolio(props) {
       </DegreeDiv>
       </StyledCarousel>
       <StyledCarousel>
-      {/* <ImageDiv2 src={Degree1} /> */}
+      <ImageDiv2 src={Degree1} />
       <DegreeDiv>    
         <center>
-            <b><p>Intermediate</p></b>
+            <b><p>Intermediate (2014)</p></b>
             <p>Board of intermediate</p>
             <p> M.P.C</p>
             <p>Aggregate: 85%</p>
@@ -350,17 +350,17 @@ function PortFolio(props) {
       </DegreeDiv>
       </StyledCarousel>
       <StyledCarousel>
-      {/* <ImageDiv3 src={Degree1} /> */}
+      <ImageDiv3 src={Degree1} />
       <DegreeDiv>    
         <center>
-            <b><p>S.S.C</p></b>
+            <b><p>S.S.C (2012)</p></b>
             <p>Board of Secondary</p>
             <p>XI </p>
             <p>Aggregate: 9.2 CGPA</p>
             </center>
       </DegreeDiv>
       </StyledCarousel>
-      </Carousel>
+      </MainCarousel>
       <Break />
     </MainDiv>
   );
