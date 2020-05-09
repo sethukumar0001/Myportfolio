@@ -187,7 +187,7 @@ border-style: solid;
   border-radius:13px;
   margin-left:400px;
   margin-right:400px;
-  border-color:red;
+  border-color:gray;
 `;
 
 const ImageDiv = styled.img`
