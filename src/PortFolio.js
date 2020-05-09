@@ -212,10 +212,10 @@ margin-left: -383px;
 margin-top: 32px;
 `
 const MainCarousel = styled(Carousel)`
-
+background:white !important;
 `;
 const StyledCarousel = styled.div`
-
+background:white !important;
 `;
 
 const YearTag = styled.span`
