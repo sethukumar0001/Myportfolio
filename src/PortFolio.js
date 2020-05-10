@@ -17,6 +17,9 @@ import Html from './_assets/html.png';
 
 
 
+const Body = styled.body`
+background-color:white !important;
+`
 
 const MainDiv = styled.main`
 @media (max-width: 768px) {
@@ -35,7 +38,6 @@ const MainDiv = styled.main`
   }
 
 `;
-
 
 //card 1
 
@@ -139,20 +141,22 @@ margin-right:200px;
 const TechLogos = styled.div`
 background:white !important;
 float:right;
-margin-left:600px;
+margin-left:560px;
+margin-right:40px;
 width:500px !important;
+
 `;
 const TechCarousel = styled(Carousel)`
 margin-top:100px;
-background:white !important;
+
+border-radius:30px !important;
 `;
 const TechImages = styled.img`
 width:200px!important;
-background:white !important;
+margin-top:15px;
 `;
 const TechImagesReact = styled.img`
 width:320px!important;
-background:white !important;
 `;
 
 //text
@@ -204,8 +208,6 @@ border-style: solid;
 
 const ThumbUpAltIconTag = styled(ThumbUpAltIcon)`
 float:left;
-// margin-top:12px;
-// margin-right:10px;
 `;
 
 const TypographyDiv = styled(Typography)`
@@ -269,7 +271,7 @@ margin-right:750px;
 function PortFolio(props) {
 
   return (
-
+    <Body>
     <MainDiv>
       <MainCard >
         <CardContentDiv>
@@ -431,6 +433,7 @@ function PortFolio(props) {
       </MainCarousel>
       <Break />
     </MainDiv>
+    </Body>
   );
 }
 
