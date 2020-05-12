@@ -253,17 +253,11 @@ border-style: solid;
 //education
 
 const YearTag = styled.span`
-font-family:cursive;
-// margin-bottom:50px;
-// float:right;
-// margin-top:13px;
+font-family:cursive !important;
 margin-left:10vh;
 `
 const YearTag1 = styled.span`
-font-family:cursive;
-// margin-bottom:50px;
-// float:right;
-// margin-top:13px;
+font-family:cursive !important;
 margin-left:20vh;
 `
 
