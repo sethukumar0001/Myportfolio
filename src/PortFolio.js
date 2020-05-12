@@ -83,7 +83,7 @@ margin-top:120px;
 const CardContentDiv = styled(CardContent)`
     background-color:#F8F9F9;
     // background-image: url(${BgImage});
-    height:300px;
+    height:35vh;
     @media (max-width: 768px) {
         width:100%;
         margin:0px;
@@ -100,7 +100,11 @@ const CardContentDiv = styled(CardContent)`
       }   
 `;
 
+//work experience
 
+const WorkExperienceMainDiv = styled.div`
+float:left;
+`;
 const TextDiv = styled.h1`
 font-family:Impact, fantasy;
 color:#212F3D;
@@ -114,91 +118,26 @@ margin-bottom:20px;
 
 `;
 const TextDiv3 = styled.h5`
-font-weight:500px;
-font-size:30px;
+font-size:3.5vh;
 font-family:Impact, fantasy;
 color:#212F3D;
-margin-left:250px;
-`;
-const TextDiv4 = styled.h5`
-font-weight:500px;
-font-size:30px;
-font-family:Impact, fantasy;
-color:#212F3D;
-// margin-left:250px;
-`;
-const TextDiv5 = styled.h5`
-float:right;
-font-weight:500px;
-font-size:30px;
-font-family:Impact, fantasy;
-color:#212F3D;
-margin-right:200px;
+margin-left:35vh;
 `;
 
-//tech logos
-
-const TechLogos = styled.div`
-background:white !important;
-float:right;
-margin-left:560px;
-margin-right:40px;
-width:500px !important;
-
-`;
-const TechCarousel = styled(Carousel)`
-margin-top:100px;
-
-border-radius:30px !important;
-`;
-const TechImages = styled.img`
-width:200px!important;
-margin-top:15px;
-`;
-const TechImagesReact = styled.img`
-width:320px!important;
+const Logo1 = styled.img`
+width : 35vh;
 `;
 
-//text
-
-const TitleDiv1 = styled.div`
-// float
-margin-left:30px;
-`;
-
-const TitleDiv2 = styled.div`
-// float
-margin-left:30px;
+const Logo2 = styled.img`
+width : 20vh;
 `;
 
 const HeaderTag1 = styled.h3`
 font-family:Impact, fantasy;
-margin-left:10px;
-`;
-
-const SideHeaderTage = styled.p`
-
-font-family:Palatino, serif;
-font-size:18px;
-// margin-right:80px;
-margin-left:33px;
-`;
-
-const Logo1 = styled.img`
-width : 280px;
-// float:right;
-margin-right:30px;
-`;
-
-const Logo2 = styled.img`
-width : 180px;
-// float:right;
-margin-right:100px;
 `;
 
 const BorderDiv = styled.div`
-padding:5px;
-width:600px;
+width:60vh;
 margin-left:40px;
 border-style: solid;
   border-width: 1px;
@@ -206,57 +145,137 @@ border-style: solid;
   border-color:#85929E;
 `;
 
+const TypographyDiv = styled(Typography)`
+`;
+
 const ThumbUpAltIconTag = styled(ThumbUpAltIcon)`
 float:left;
 `;
 
-const TypographyDiv = styled(Typography)`
+const SideHeaderTage = styled.p`
+float:unset;
+font-family:Palatino, serif;
+font-size:2.1vh;
+margin-left:33px;
 `;
-//education
+
+//tech logo carousel
+
+
+const MainCarouselDiv = styled.div`
+margin-left:40vh;
+`;
+
+const TextDiv5 = styled.h5`
+font-size:4vh;
+font-family:Impact, fantasy;
+color:#212F3D;
+margin-left:90vh
+`;
+
+const TechLogos = styled.div`
+background:white !important;
+margin-left:70vh;
+margin-right:4vh;
+width:60vh !important;
+`;
+
+
+//logo and project margin
+
+const TitleDiv1 = styled.div`
+margin-left:10vh;
+`;
+
+const TitleDiv2 = styled.div`
+margin-left:10vh;
+`;
+
+//tech Images
+
+const TechCarousel = styled(Carousel)`
+margin-top:20vh;
+background:white !important;
+`;
+const TechImages = styled.img`
+width:30vh!important;
+margin-top:15px;
+`;
+const TechImagesReact = styled.img`
+width:50vh !important;
+`;
+
+//education div style
+
+const EductionMainDiv = styled.div`
+`;
 
 const EducationDiv = styled.div`
-margin-top:100px
+margin-top:20vh;
 `;
+const TextDiv4 = styled.h5`
+font-size:4vh;
+font-family:Impact, fantasy;
+color:#212F3D;
+`;
+
+//education carousel
+
+const MainCarousel = styled(Carousel)`
+background:white !important;
+`;
+
+const StyledCarousel = styled.div`
+background:white !important;
+`;
+const ImageDiv = styled.img`
+width: 14.5vh !important;
+height: 12vh;
+position: absolute;
+left: 43.7vh;
+margin-top: 4vh;
+`;
+
 
 const DegreeDiv = styled.div`
 background:white !important;
 font-family:Florence;
-font-size:18px;
+font-size:2.1vh;
 border-style: solid;
   border-width: 1px;
   border-radius:13px;
-  margin-left:400px;
-  margin-right:400px;
+  margin-left:50.69vh;
+  margin-right:50.69vh;
   border-color:gray;
 `;
 
-const ImageDiv = styled.img`
-width: 128px !important;
-height: 116px;
-position: absolute;
-margin-left: -383px;
-margin-top: 32px;
-`
-const ImageDiv2 = styled.img`
-width: 128px !important;
-height: 116px;
-position: absolute;
-margin-left: -383px;
-margin-top: 32px;
-`
-const ImageDiv3 = styled.img`
-width: 128px !important;
-height: 116px;
-position: absolute;
-margin-left: -383px;
-margin-top: 32px;
-`
-const MainCarousel = styled(Carousel)`
-background:white !important;
-`;
-const StyledCarousel = styled.div`
-background:white !important;
-`;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//education
+
+
+
+
+
 const YearTag = styled.span`
 font-family:cursive;
 margin-bottom:10px;
@@ -272,167 +291,167 @@ function PortFolio(props) {
 
   return (
     <Body>
-    <MainDiv>
-      <MainCard >
-        <CardContentDiv>
-          <ContentDiv> </ContentDiv>
-          <center>
-            <TextDiv>
-              Hi I'm Sethu Kumar
+      <MainDiv>
+        <MainCard >
+          <CardContentDiv>
+            <ContentDiv> </ContentDiv>
+            <center>
+              <TextDiv>
+                Hi I'm Sethu Kumar
                  </TextDiv>
-            <TextDiv1>
-              React Developer(React,Redux,Mobx,Html,Css,Javascript)
+              <TextDiv1>
+                React Developer(React,Redux,Mobx,Html,Css,Javascript)
                  </TextDiv1>
-          </center>
-        </CardContentDiv>
-      </MainCard>
-      <Break />
+            </center>
+          </CardContentDiv>
+        </MainCard>
 
-      <TypographyDiv>
-        <TextDiv5>
-          Technologies
+        {/* Work Experience */}
+
+        <WorkExperienceMainDiv>
+          <TypographyDiv>
+            <TextDiv3>
+              Work Experience
+          </TextDiv3>
+          </TypographyDiv>
+
+          <TitleDiv1>
+            <Logo1 src={Bigapp} />
+            {/* <YearTag>(2020 Feb - Now)</YearTag> */}
+            <HeaderTag1>
+              Project :
+          </HeaderTag1>
+
+            <BorderDiv>
+              <TypographyDiv>
+                <ThumbUpAltIconTag />
+                <SideHeaderTage>
+                  Curio Travel and Expense.
+              </SideHeaderTage>
+              </TypographyDiv>
+            </BorderDiv>
+            <Break />
+          </TitleDiv1>
+
+          <TitleDiv2>
+            <Logo2 src={Novisync} />
+            {/* <YearTag>(2018 Nov - 2020 Jan)</YearTag> */}
+            <HeaderTag1>
+              Projects :
+          </HeaderTag1>
+
+            <BorderDiv>
+              <TypographyDiv>
+                <ThumbUpAltIconTag />
+                <SideHeaderTage>
+                  NExam-Online Test Project.
+              </SideHeaderTage>
+              </TypographyDiv>
+              <Break />
+
+              <TypographyDiv>
+                <ThumbUpAltIconTag />
+                <SideHeaderTage>
+                  Novisync & Cadrac Labs Websites.
+             </SideHeaderTage>
+              </TypographyDiv>
+              <Break />
+
+              <TypographyDiv>
+                <ThumbUpAltIconTag />
+                <SideHeaderTage>
+                  Jobbuzz.
+           </SideHeaderTage>
+              </TypographyDiv>
+            </BorderDiv>
+          </TitleDiv2>
+          <Break />
+        </WorkExperienceMainDiv>
+
+        {/* Tech Logo carousel */}
+
+        <MainCarouselDiv>
+          <TextDiv5>
+            Technologies
           </TextDiv5>
-      </TypographyDiv>
 
-      <TechLogos>
-        <TechCarousel
-          interval={2000}
-          showIndicators={false}
-          showStatus={false}
-          showThumbs={false}
-          showArrows={false}
-          infiniteLoop
-          autoPlay
-        >
-          <TechImagesReact src={ReactJs} />
-          <TechImages src={Redux} />
-          <TechImages src={Mobx} />
-          <TechImages src={Html} />
-        </TechCarousel>
-      </TechLogos>
-
-      {/* <center> */}
-      <TypographyDiv>
-        <TextDiv3>
-          Work Experience
-        </TextDiv3>
-      </TypographyDiv>
-      {/* </center> */}
-      {/* <Break /> */}
-
-      <TitleDiv1>
-        <Logo1 src={Bigapp} />
-        {/* <YearTag>(2020 Feb - Now)</YearTag> */}
-        <HeaderTag1>
-          Project :
-            </HeaderTag1>
-
-        <BorderDiv>
-          <TypographyDiv>
-            <ThumbUpAltIconTag />
-            <SideHeaderTage>
-              Curio Travel and Expense.
-            </SideHeaderTage>
-          </TypographyDiv>
-        </BorderDiv>
+          <TechLogos>
+            <TechCarousel
+              interval={2000}
+              showIndicators={false}
+              showStatus={false}
+              showThumbs={false}
+              showArrows={false}
+              infiniteLoop
+              autoPlay
+            >
+              <TechImagesReact src={ReactJs} />
+              <TechImages src={Redux} />
+              <TechImages src={Mobx} />
+              <TechImages src={Html} />
+            </TechCarousel>
+          </TechLogos>
+        </MainCarouselDiv>
         <Break />
-      </TitleDiv1>
 
-      <TitleDiv2>
-        <Logo2 src={Novisync} />
-        {/* <YearTag>(2018 Nov - 2020 Jan)</YearTag> */}
-        <HeaderTag1>
-          Projects :
-            </HeaderTag1>
+        {/* Education Carousel div */}
 
-        <BorderDiv>
-          <TypographyDiv>
-            <ThumbUpAltIconTag />
-            <SideHeaderTage>
-              NExam-Online Test Project.
-            </SideHeaderTage>
-          </TypographyDiv>
-          <Break />
-
-          <TypographyDiv>
-            <ThumbUpAltIconTag />
-            <SideHeaderTage>
-              Novisync & Cadrac Labs Websites.
-            </SideHeaderTage>
-          </TypographyDiv>
-          <Break />
-
-          <TypographyDiv>
-            <ThumbUpAltIconTag />
-            <SideHeaderTage>
-              Jobbuzz.
-            </SideHeaderTage>
-          </TypographyDiv>
-        </BorderDiv>
-      </TitleDiv2>
-      <Break />
-
-
-
-
-
-      <EducationDiv>
-        <center>
-          <TypographyDiv>
-            <TextDiv4>
-              Education & Qualification
+        <EductionMainDiv>
+          <center>
+            <EducationDiv>
+              <TextDiv4>
+                Education & Qualification
             </TextDiv4>
-          </TypographyDiv>
-        </center>
+              <Break />
+            </EducationDiv>
+     
+          <MainCarousel
+            interval={3000}
+            showIndicators={false}
+            showStatus={false}
+            showThumbs={false}
+            showArrows={false}
+            infiniteLoop
+            autoPlay
+          >
+            <StyledCarousel>
+              <ImageDiv src={Degree1} />
+              <DegreeDiv>
+                <center>
+                  <b><p> Bachelor of technology (B. Tech) (2018)</p></b>
+                  <p> JNTU Ananthapur</p>
+                  <p> Mechanical Engineering</p>
+                  <p> Aggregate: 75%</p>
+                </center>
+              </DegreeDiv>
+            </StyledCarousel>
+            <StyledCarousel>
+              <ImageDiv src={Degree1} />
+              <DegreeDiv>
+                <center>
+                  <b><p>Intermediate (2014)</p></b>
+                  <p>Board of intermediate</p>
+                  <p> M.P.C</p>
+                  <p>Aggregate: 85%</p>
+                </center>
+              </DegreeDiv>
+            </StyledCarousel>
+            <StyledCarousel>
+              <ImageDiv src={Degree1} />
+              <DegreeDiv>
+                <center>
+                  <b><p>S.S.C (2012)</p></b>
+                  <p>Board of Secondary</p>
+                  <p>XI </p>
+                  <p>Aggregate: 9.2 CGPA</p>
+                </center>
+              </DegreeDiv>
+            </StyledCarousel>
+          </MainCarousel>
+          </center>
+        </EductionMainDiv>
         <Break />
-      </EducationDiv>
-
-
-      <MainCarousel
-        interval={3000}
-        showIndicators={false}
-        showStatus={false}
-        showThumbs={false}
-        showArrows={false}
-        infiniteLoop
-        autoPlay
-      >
-        <StyledCarousel>
-          <ImageDiv src={Degree1} />
-          <DegreeDiv>
-            <center>
-              <b><p> Bachelor of technology (B. Tech) (2018)</p></b>
-              <p> JNTU Ananthapur</p>
-              <p> Mechanical Engineering</p>
-              <p> Aggregate: 75%</p>
-            </center>
-          </DegreeDiv>
-        </StyledCarousel>
-        <StyledCarousel>
-          <ImageDiv2 src={Degree1} />
-          <DegreeDiv>
-            <center>
-              <b><p>Intermediate (2014)</p></b>
-              <p>Board of intermediate</p>
-              <p> M.P.C</p>
-              <p>Aggregate: 85%</p>
-            </center>
-          </DegreeDiv>
-        </StyledCarousel>
-        <StyledCarousel>
-          <ImageDiv3 src={Degree1} />
-          <DegreeDiv>
-            <center>
-              <b><p>S.S.C (2012)</p></b>
-              <p>Board of Secondary</p>
-              <p>XI </p>
-              <p>Aggregate: 9.2 CGPA</p>
-            </center>
-          </DegreeDiv>
-        </StyledCarousel>
-      </MainCarousel>
-      <Break />
-    </MainDiv>
+      </MainDiv>
     </Body>
   );
 }
