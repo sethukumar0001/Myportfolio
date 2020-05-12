@@ -250,41 +250,22 @@ border-style: solid;
 `;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //education
-
-
-
-
 
 const YearTag = styled.span`
 font-family:cursive;
-margin-bottom:10px;
-float:right;
-margin-top:13px;
-margin-right:750px;
+// margin-bottom:50px;
+// float:right;
+// margin-top:13px;
+margin-left:10vh;
 `
-
-
+const YearTag1 = styled.span`
+font-family:cursive;
+// margin-bottom:50px;
+// float:right;
+// margin-top:13px;
+margin-left:20vh;
+`
 
 
 function PortFolio(props) {
@@ -317,7 +298,7 @@ function PortFolio(props) {
 
           <TitleDiv1>
             <Logo1 src={Bigapp} />
-            {/* <YearTag>(2020 Feb - Now)</YearTag> */}
+            <YearTag>(2020 Feb - Now)</YearTag>
             <HeaderTag1>
               Project :
           </HeaderTag1>
@@ -335,7 +316,7 @@ function PortFolio(props) {
 
           <TitleDiv2>
             <Logo2 src={Novisync} />
-            {/* <YearTag>(2018 Nov - 2020 Jan)</YearTag> */}
+            <YearTag1>(2018 Nov - 2020 Jan)</YearTag1>
             <HeaderTag1>
               Projects :
           </HeaderTag1>
