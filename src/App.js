@@ -38,6 +38,7 @@ const StyledHeader = styled.header`
 
 const MenuIconButton = styled.div`
   display: none;
+  color:white;
   @media (max-width: 768px) {
     display:flex;
     margin-right: 720px;
@@ -227,36 +228,6 @@ export function Home(props) {
           </DrawerUl>
         </DrawerNav>
       </Drawer>
-
-      {/* <LPWrapper> */}
-      {/* <StyledMain> */}
-      {/* <CarouselWrapper>
-          <StyledCarousel
-            interval={1000}
-            showIndicators={false}
-            showStatus={false}
-            showThumbs={false}
-            showArrows={false}
-            // infiniteLoop
-            // autoPlay
-          >
-            <div>
-              <CarouselImage src={ReactLogo} alt="1" />
-            </div>
-            <div>
-              <CarouselImage src={ReduxLogo} alt="2" />
-            </div>
-            <div>
-              <CarouselImage src={MobxLogo} alt="3" />
-            </div>
-            <div>
-              <CarouselImage src={HtmlLogo} alt="4" />
-            </div>
-
-          </StyledCarousel>
-        </CarouselWrapper> */}
-      {/* </StyledMain> */}
-      {/* </LPWrapper> */}
       <Router>
         <switch>
           <Route exact path="/" component={PortFolio} />

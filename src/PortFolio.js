@@ -208,6 +208,7 @@ width:50vh !important;
 //education div style
 
 const EductionMainDiv = styled.div`
+float:unset;
 `;
 
 const EducationDiv = styled.div`

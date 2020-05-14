@@ -16,20 +16,17 @@ import BgImage from './_assets/bg0.jpg';
 
 const MainDiv = styled.main`
 // background-color:gray;
-margin-top:45px;
+margin-top:75px;
 @media (max-width: 768px) {
     width:100%;
     margin:15px;
 
   }
   @media (max-width: 458px) {
-   
   }
   @media (width: 375px) {
-
   }
   @media (width: 425px) {
-   
   }
 
 `;
@@ -40,10 +37,8 @@ margin-top:45px;
 const MainCard = styled(Card)`
 margin-bottom:30px;
 margin-left:220px;
-// margin-right:400px;
-margin-top:30px;
-float:left;
 width:500px;
+float:left;
 
 
 @media (max-width: 768px) {
@@ -159,7 +154,6 @@ margin-right: 40px;
 `;
 const MailIconDiv = styled(MailIcon)`
 color:white;
-float:left;
 margin-top:2px;
 margin-left:4px;
 margin-right: 40px;
@@ -221,12 +215,7 @@ const Ptag2 = styled(Typography)`
 //card 2
 
 const MainCard2 = styled(Card)`
-margin-bottom:30px;
-margin-right:220px;
-margin-top:30px;
-float:right;
 width:500px;
-
 
 @media (max-width: 768px) {
     width:90%;
