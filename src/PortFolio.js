@@ -14,6 +14,7 @@ import ReactJs from './_assets/react.png';
 import Redux from './_assets/redux.png';
 import Mobx from './_assets/mobx.png';
 import Html from './_assets/html.png';
+import {  Link } from "react-router-dom";
 
 
 
@@ -46,7 +47,7 @@ const MainCard = styled(Card)`
 @media (max-width: 768px) {
     width:90%;
     margin:0px;
-    // margin-right:50px;
+    height:250px;
 
   }
   @media (max-width: 458px) {
@@ -82,7 +83,6 @@ margin-top:120px;
 
 const CardContentDiv = styled(CardContent)`
     background-color:white;
-    // background-image: url(${BgImage});
     height:35vh;
     @media (max-width: 768px) {
         width:100%;
@@ -104,14 +104,43 @@ const CardContentDiv = styled(CardContent)`
 
 const WorkExperienceMainDiv = styled.div`
 float:left;
+margin-left:20px;
+@media (max-width: 768px) {
+  width:100%;
+}
+@media (max-width: 458px) {
+ 
+}
+@media (width: 375px) {
+
+}
+@media (width: 425px) {
+ 
+}   
 `;
 const TextDiv = styled.h1`
 font-family:Impact, fantasy;
 color:#212F3D;
+@media (max-width: 768px) {
+  margin-right:25px;
+  margin-bottom:40px
+
+  
+}
+@media (max-width: 458px) {
+ 
+}
+
 `;
 const TextDiv1 = styled.h3`
 font-family:Courier New, monospace; 
 color:#212F3D;
+@media (max-width: 768px) {
+  margin-right:20px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 const Break = styled.div`
 margin-bottom:20px;
@@ -122,6 +151,21 @@ font-size:3.5vh;
 font-family:Impact, fantasy;
 color:#212F3D;
 margin-left:35vh;
+@media (max-width: 768px) {
+  width:100%;
+  margin: 0;
+  margin-top:40px;
+  margin-left:30px;
+}
+@media (max-width: 458px) {
+ 
+}
+@media (width: 375px) {
+margin-left:100px;
+}
+@media (width: 425px) {
+ 
+}   
 `;
 
 const Logo1 = styled.img`
@@ -144,6 +188,13 @@ border-style: solid;
   border-width: 1px;
   border-radius:6px;
   border-color:#85929E;
+  @media (max-width: 768px) {
+    width:80%;
+    margin: 0;
+  }
+  @media (max-width: 458px) {
+   
+  }
 `;
 
 const TypographyDiv = styled(Typography)`
@@ -152,6 +203,7 @@ const TypographyDiv = styled(Typography)`
 const ThumbUpAltIconTag = styled(ThumbUpAltIcon)`
 float:left;
 margin-left:3px;
+
 `;
 
 const SideHeaderTage = styled.p`
@@ -163,9 +215,16 @@ margin-left:33px;
 
 //tech logo carousel
 
-
 const MainCarouselDiv = styled.div`
-margin-left:40vh;
+margin-left:30vh;
+@media (max-width: 768px) {
+  max-width:90%;
+  margin:0px;
+  margin-right:35px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 
 const TextDiv5 = styled.h5`
@@ -173,6 +232,14 @@ font-size:4vh;
 font-family:Impact, fantasy;
 color:#212F3D;
 margin-left:90vh
+@media (max-width: 768px) {
+max-width:100%;
+margin-left:50px !important;
+}
+@media (max-width: 458px) {
+  max-width:100%;
+  margin-left:55px !important;
+}
 `;
 
 const TechLogos = styled.div`
@@ -180,6 +247,14 @@ background:white !important;
 margin-left:70vh;
 margin-right:4vh;
 width:60vh !important;
+@media (max-width: 768px) {
+  background-color:#F8F9F9 !important;
+  max-width:100%;
+  margin: 0;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 
 
@@ -187,24 +262,71 @@ width:60vh !important;
 
 const TitleDiv1 = styled.div`
 margin-left:10vh;
+@media (max-width: 768px) {
+  max-width:100%;
+  margin: 0;
+  margin-top:20px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 
 const TitleDiv2 = styled.div`
 margin-left:10vh;
+@media (max-width: 768px) {
+  max-width:100%;
+  margin: 0;
+  margin-top:40px;
+}
+@media (max-width: 458px) {
+  max-width:100%;
+  // margin: 0;
+ 
+}
+@media (width: 375px) {
+}
+@media (width: 425px) {
+}  
 `;
 
 //tech Images
 
 const TechCarousel = styled(Carousel)`
 margin-top:20vh;
-background:white !important;
+background-color:#F8F9F9;
+@media (max-width: 768px) {
+  background-color:#F8F9F9;
+  max-width:100%;
+  margin-left: 25px;
+  margin:0px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 const TechImages = styled.img`
 width:30vh!important;
 margin-top:15px;
+@media (max-width: 768px) {
+  max-width:190px;
+  margin-top:30px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 const TechImagesReact = styled.img`
 width:50vh !important;
+@media (max-width: 768px) {
+  max-width:300px;
+  margin: 0;
+  margin-top:30px;
+  margin-right:50px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 
 
@@ -212,25 +334,60 @@ width:50vh !important;
 const EductionMainDiv = styled.div`
 float:unset;
 margin-top:20px;
+@media (max-width: 768px) {
+  max-width:100%;
+  margin:0px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 
 const EducationDiv = styled.div`
 margin-top:20vh;
+@media (max-width: 768px) {
+  max-width:100%;
+  margin-right: 46px;
+  margin:0px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 const TextDiv4 = styled.h5`
 font-size:4vh;
 font-family:Impact, fantasy;
 color:#212F3D;
+@media (max-width: 768px) {
+  margin:0px;
+  max-width:80%;
+}
+@media (max-width: 458px) {
+margin-right:10px !important;
+ 
+}
 `;
 
 //education carousel
 
 const MainCarousel = styled(Carousel)`
 // background:#EBF5FB !important;
+@media (max-width: 768px) {
+  width:90%;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 
 const StyledCarousel = styled.div`
 background:#F8F9F9 !important;
+@media (max-width: 768px) {
+  width:100%;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 const ImageDiv = styled.img`
 width: 14.5vh !important;
@@ -238,6 +395,14 @@ height: 12vh;
 position: absolute;
 left: 43.7vh;
 margin-top: 4vh;
+@media (max-width: 768px) {
+  display:none !important;
+  width:100%;
+  margin:0px;
+}
+@media (max-width: 458px) {
+  display:none;
+}
 `;
 
 
@@ -251,11 +416,16 @@ const DegreeDiv = styled.div`
   margin-left:50.69vh;
   margin-right:50.69vh;
   border-color:gray;
+  @media (max-width: 768px) {
+    width:90%;
+    margin:0px;
+    // margin-bottom:10px;
+  }
+  @media (max-width: 458px) {
+   
+  }
 `;
-const StyledCarouselEdu = styled.div`
-// background:white !important;
-border-radius:10px;
-`;
+
 
 //education
 
@@ -268,6 +438,38 @@ font-family:cursive !important;
 margin-left:20vh;
 `
 
+//resume section
+
+const ResumeSectionDiv = styled.div`
+padding :20px;
+`;
+const TextDiv6 = styled.h5`
+font-size:4vh;
+font-family:Impact, fantasy;
+color:#212F3D;
+// margin-left:90vh
+`;
+
+const ResumeContent = styled.div`
+
+`;
+const AResume = styled.a`
+border-radius:15px;
+font-family: Impact, fantasy;
+transition: all 0.3s ease 0s;
+font-size:18px;
+color:black;
+&:hover {
+  color: red;
+}
+text-decoration: none;
+margin-left:10px;
+`;
+const Spandiv = styled.span`
+font-family: fantacy;
+margin-left:10px;
+font-size:20px;
+`;
 
 function PortFolio(props) {
 
@@ -282,7 +484,7 @@ function PortFolio(props) {
                 Hi I'm Sethu Kumar
                  </TextDiv>
               <TextDiv1>
-                React Developer(React,Redux,Mobx,Html,Css,Javascript)
+                React Developer (React, Redux, Mobx, Html, Css, Javascript)(1.6 yrs)
                  </TextDiv1>
             </center>
           </CardContentDiv>
@@ -353,9 +555,11 @@ function PortFolio(props) {
         {/* Tech Logo carousel */}
 
         <MainCarouselDiv>
+<TypographyDiv>
           <TextDiv5>
             Technologies
           </TextDiv5>
+          </TypographyDiv>
 
           <TechLogos>
             <TechCarousel
@@ -367,18 +571,10 @@ function PortFolio(props) {
               infiniteLoop
               autoPlay
             >
-              <StyledCarouselEdu>
               <TechImagesReact src={ReactJs} />
-              </StyledCarouselEdu>
-              <StyledCarouselEdu>
               <TechImages src={Redux} />
-              </StyledCarouselEdu>
-              <StyledCarouselEdu>
               <TechImages src={Mobx} />
-              </StyledCarouselEdu>
-              <StyledCarouselEdu>
               <TechImages src={Html} />
-              </StyledCarouselEdu>
             </TechCarousel>
           </TechLogos>
         </MainCarouselDiv>
@@ -441,6 +637,21 @@ function PortFolio(props) {
           </center>
         </EductionMainDiv>
         {/* <Break /> */}
+
+        {/* Resume section */}
+
+        <ResumeSectionDiv>
+          <TextDiv6>
+            <center>
+            Resume
+            </center>
+          </TextDiv6>
+          <center>
+          <ResumeContent><Spandiv>Click here to download resume</Spandiv>
+          <AResume href={`${process.env.PUBLIC_URL}/Sethukumar_Resume.pdf`} target='_blank' download>Resume</AResume>
+          </ResumeContent>
+          </center>
+        </ResumeSectionDiv>
       </MainDiv>
     </Body>
   );
