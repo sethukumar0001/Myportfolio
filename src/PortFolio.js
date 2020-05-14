@@ -18,7 +18,7 @@ import Html from './_assets/html.png';
 
 
 const Body = styled.body`
-background-color:white !important;
+background-color:#F8F9F9 !important;
 `
 
 const MainDiv = styled.main`
@@ -81,7 +81,7 @@ margin-top:120px;
 `;
 
 const CardContentDiv = styled(CardContent)`
-    background-color:#F8F9F9;
+    background-color:white;
     // background-image: url(${BgImage});
     height:35vh;
     @media (max-width: 768px) {
@@ -137,11 +137,12 @@ font-family:Impact, fantasy;
 `;
 
 const BorderDiv = styled.div`
+background:white !important;
 width:60vh;
 margin-left:40px;
 border-style: solid;
   border-width: 1px;
-  border-radius:13px;
+  border-radius:6px;
   border-color:#85929E;
 `;
 
@@ -150,6 +151,7 @@ const TypographyDiv = styled(Typography)`
 
 const ThumbUpAltIconTag = styled(ThumbUpAltIcon)`
 float:left;
+margin-left:3px;
 `;
 
 const SideHeaderTage = styled.p`
@@ -205,10 +207,11 @@ const TechImagesReact = styled.img`
 width:50vh !important;
 `;
 
-//education div style
 
+//education div style
 const EductionMainDiv = styled.div`
 float:unset;
+margin-top:20px;
 `;
 
 const EducationDiv = styled.div`
@@ -223,11 +226,11 @@ color:#212F3D;
 //education carousel
 
 const MainCarousel = styled(Carousel)`
-background:white !important;
+// background:#EBF5FB !important;
 `;
 
 const StyledCarousel = styled.div`
-background:white !important;
+background:#F8F9F9 !important;
 `;
 const ImageDiv = styled.img`
 width: 14.5vh !important;
@@ -239,17 +242,20 @@ margin-top: 4vh;
 
 
 const DegreeDiv = styled.div`
-background:white !important;
-font-family:Florence;
-font-size:2.1vh;
-border-style: solid;
+  background:white !important;
+  font-family:Florence;
+  font-size:2.1vh;
+  border-style: solid;
   border-width: 1px;
   border-radius:13px;
   margin-left:50.69vh;
   margin-right:50.69vh;
   border-color:gray;
 `;
-
+const StyledCarouselEdu = styled.div`
+// background:white !important;
+border-radius:10px;
+`;
 
 //education
 
@@ -293,7 +299,7 @@ function PortFolio(props) {
 
           <TitleDiv1>
             <Logo1 src={Bigapp} />
-            <YearTag>(2020 Feb - Now)</YearTag>
+            {/* <YearTag>(2020 Feb - Now)</YearTag> */}
             <HeaderTag1>
               Project :
           </HeaderTag1>
@@ -311,7 +317,7 @@ function PortFolio(props) {
 
           <TitleDiv2>
             <Logo2 src={Novisync} />
-            <YearTag1>(2018 Nov - 2020 Jan)</YearTag1>
+            {/* <YearTag1>(2018 Nov - 2020 Jan)</YearTag1> */}
             <HeaderTag1>
               Projects :
           </HeaderTag1>
@@ -361,10 +367,18 @@ function PortFolio(props) {
               infiniteLoop
               autoPlay
             >
+              <StyledCarouselEdu>
               <TechImagesReact src={ReactJs} />
+              </StyledCarouselEdu>
+              <StyledCarouselEdu>
               <TechImages src={Redux} />
+              </StyledCarouselEdu>
+              <StyledCarouselEdu>
               <TechImages src={Mobx} />
+              </StyledCarouselEdu>
+              <StyledCarouselEdu>
               <TechImages src={Html} />
+              </StyledCarouselEdu>
             </TechCarousel>
           </TechLogos>
         </MainCarouselDiv>
@@ -380,53 +394,53 @@ function PortFolio(props) {
             </TextDiv4>
               <Break />
             </EducationDiv>
-     
-          <MainCarousel
-            interval={3000}
-            showIndicators={false}
-            showStatus={false}
-            showThumbs={false}
-            showArrows={false}
-            infiniteLoop
-            autoPlay
-          >
-            <StyledCarousel>
-              <ImageDiv src={Degree1} />
-              <DegreeDiv>
-                <center>
-                  <b><p> Bachelor of technology (B. Tech) (2018)</p></b>
-                  <p> JNTU Ananthapur</p>
-                  <p> Mechanical Engineering</p>
-                  <p> Aggregate: 75%</p>
-                </center>
-              </DegreeDiv>
-            </StyledCarousel>
-            <StyledCarousel>
-              <ImageDiv src={Degree1} />
-              <DegreeDiv>
-                <center>
-                  <b><p>Intermediate (2014)</p></b>
-                  <p>Board of intermediate</p>
-                  <p> M.P.C</p>
-                  <p>Aggregate: 85%</p>
-                </center>
-              </DegreeDiv>
-            </StyledCarousel>
-            <StyledCarousel>
-              <ImageDiv src={Degree1} />
-              <DegreeDiv>
-                <center>
-                  <b><p>S.S.C (2012)</p></b>
-                  <p>Board of Secondary</p>
-                  <p>XI </p>
-                  <p>Aggregate: 9.2 CGPA</p>
-                </center>
-              </DegreeDiv>
-            </StyledCarousel>
-          </MainCarousel>
+
+            <MainCarousel
+              interval={3000}
+              showIndicators={false}
+              showStatus={false}
+              showThumbs={false}
+              showArrows={false}
+              infiniteLoop
+              autoPlay
+            >
+              <StyledCarousel>
+                <ImageDiv src={Degree1} />
+                <DegreeDiv>
+                  <center>
+                    <b><p> Bachelor of technology (B. Tech) (2018)</p></b>
+                    <p> JNTU Ananthapur</p>
+                    <p> Mechanical Engineering</p>
+                    <p> Aggregate: 75%</p>
+                  </center>
+                </DegreeDiv>
+              </StyledCarousel>
+              <StyledCarousel>
+                <ImageDiv src={Degree1} />
+                <DegreeDiv>
+                  <center>
+                    <b><p>Intermediate (2014)</p></b>
+                    <p>Board of intermediate</p>
+                    <p> M.P.C</p>
+                    <p>Aggregate: 85%</p>
+                  </center>
+                </DegreeDiv>
+              </StyledCarousel>
+              <StyledCarousel>
+                <ImageDiv src={Degree1} />
+                <DegreeDiv>
+                  <center>
+                    <b><p>S.S.C (2012)</p></b>
+                    <p>Board of Secondary</p>
+                    <p>XI </p>
+                    <p>Aggregate: 9.2 CGPA</p>
+                  </center>
+                </DegreeDiv>
+              </StyledCarousel>
+            </MainCarousel>
           </center>
         </EductionMainDiv>
-        <Break />
+        {/* <Break /> */}
       </MainDiv>
     </Body>
   );
