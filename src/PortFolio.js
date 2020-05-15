@@ -24,6 +24,7 @@ background-color:#F8F9F9 !important;
   background-color:#F8F9F9 !important;
   max-width:100%;
   margin:0px;
+  overflow:hidden;
 }
 @media (max-width: 458px) {
  
@@ -54,7 +55,7 @@ const MainCard = styled(Card)`
 
 @media (max-width: 768px) {
     width:90%;
-    margin:0px;
+    margin:5px;
     height:250px;
     margin-top:10px;
     margin-left:15px;

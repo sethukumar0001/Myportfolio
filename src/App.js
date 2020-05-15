@@ -62,7 +62,7 @@ const MenuIconButton = styled.div`
   @media (max-width: 768px) {
     display:flex;
     max-width:100%;
-    margin-top: 12px;
+    margin-top: 19px;
   }
   @media (max-width: 458px) {
     margin-right: 90%;
