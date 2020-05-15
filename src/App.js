@@ -25,7 +25,6 @@ import HireMe from './HireMe';
 
 
 const MainDiv = styled.main`
-margin-top:75px;
 @media (max-width: 768px) {
   background-color:#F8F9F9 !important;
     width:100%;
