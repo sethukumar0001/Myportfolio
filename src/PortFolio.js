@@ -347,7 +347,7 @@ width:50vh !important;
 //education div style
 const EductionMainDiv = styled.div`
 float:unset;
-margin-top:15px;
+margin-top:20px;
 @media (max-width: 768px) {
   max-width:100%;
   margin:0px;
@@ -454,7 +454,7 @@ margin-left:20vh;
 //resume section
 
 const ResumeSectionDiv = styled.div`
-padding :20px;
+// padding :1px;
 @media (max-width: 768px) {
   background-color:#F8F9F9 !important;
   max-width:100%;
