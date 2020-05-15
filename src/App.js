@@ -121,10 +121,7 @@ const Li = styled.li`
 const A = styled.a`
   font-family: Impact, fantasy;
   transition: all 0.3s ease 0s;
-  font-size:17px;
-//   background-color: white;
-//   padding 5px;
-//   border-radius:10px;
+  font-size:19px;
   color:white;
   &:hover {
     color: black;

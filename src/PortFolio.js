@@ -347,11 +347,10 @@ width:50vh !important;
 //education div style
 const EductionMainDiv = styled.div`
 float:unset;
-margin-top:20px;
+margin-top:15px;
 @media (max-width: 768px) {
   max-width:100%;
   margin:0px;
-  // margin-left:12px;
 }
 @media (max-width: 458px) {
  
