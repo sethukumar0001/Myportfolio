@@ -80,7 +80,7 @@ const CloseIconButton = styled.div`
   margin-top: 8px;
   @media (max-width: 768px) {
     max-width:100%;
-    margin:0px;
+    margin:1px;
    }
    @media (max-width: 458px) {
    }
