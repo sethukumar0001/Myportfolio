@@ -20,12 +20,20 @@ import {  Link } from "react-router-dom";
 
 const Body = styled.body`
 background-color:#F8F9F9 !important;
+@media (max-width: 768px) {
+  background-color:#F8F9F9 !important;
+  max-width:100%;
+  margin:0px;
+}
+@media (max-width: 458px) {
+ 
+}
 `
 
 const MainDiv = styled.main`
 @media (max-width: 768px) {
     width:100%;
-    margin:15px;
+    margin:0px;
 
   }
   @media (max-width: 458px) {
@@ -48,6 +56,8 @@ const MainCard = styled(Card)`
     width:90%;
     margin:0px;
     height:250px;
+    margin-top:10px;
+    margin-left:15px;
 
   }
   @media (max-width: 458px) {
@@ -145,6 +155,7 @@ color:#212F3D;
 const Break = styled.div`
 margin-bottom:20px;
 
+
 `;
 const TextDiv3 = styled.h5`
 font-size:3.5vh;
@@ -155,7 +166,7 @@ margin-left:35vh;
   width:100%;
   margin: 0;
   margin-top:40px;
-  margin-left:30px;
+  margin-left:60px;
 }
 @media (max-width: 458px) {
  
@@ -189,8 +200,9 @@ border-style: solid;
   border-radius:6px;
   border-color:#85929E;
   @media (max-width: 768px) {
-    width:80%;
+    width:90%;
     margin: 0;
+    margin-right:4px;
   }
   @media (max-width: 458px) {
    
@@ -211,16 +223,17 @@ float:unset;
 font-family:Palatino, serif;
 font-size:2.1vh;
 margin-left:33px;
+
 `;
 
 //tech logo carousel
 
 const MainCarouselDiv = styled.div`
-margin-left:30vh;
+margin-left:30vh;                                                                                                                                                                                                                                                                                 
 @media (max-width: 768px) {
   max-width:90%;
   margin:0px;
-  margin-right:35px;
+  margin-left:15px;
 }
 @media (max-width: 458px) {
  
@@ -231,14 +244,14 @@ const TextDiv5 = styled.h5`
 font-size:4vh;
 font-family:Impact, fantasy;
 color:#212F3D;
-margin-left:90vh
+margin-left:90vh;
 @media (max-width: 768px) {
 max-width:100%;
 margin-left:50px !important;
 }
 @media (max-width: 458px) {
   max-width:100%;
-  margin-left:55px !important;
+  margin-left:65px !important;
 }
 `;
 
@@ -337,6 +350,7 @@ margin-top:20px;
 @media (max-width: 768px) {
   max-width:100%;
   margin:0px;
+  // margin-left:12px;
 }
 @media (max-width: 458px) {
  
@@ -351,7 +365,6 @@ margin-top:20vh;
   margin:0px;
 }
 @media (max-width: 458px) {
- 
 }
 `;
 const TextDiv4 = styled.h5`
@@ -442,12 +455,29 @@ margin-left:20vh;
 
 const ResumeSectionDiv = styled.div`
 padding :20px;
+@media (max-width: 768px) {
+  background-color:#F8F9F9 !important;
+  max-width:100%;
+  margin:0px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 const TextDiv6 = styled.h5`
 font-size:4vh;
 font-family:Impact, fantasy;
 color:#212F3D;
 // margin-left:90vh
+@media (max-width: 768px) {
+  background-color:#F8F9F9 !important;
+  max-width:100%;
+  margin:5px;
+}
+@media (max-width: 458px) {
+ 
+}
+
 `;
 
 const ResumeContent = styled.div`
@@ -469,6 +499,14 @@ const Spandiv = styled.span`
 font-family: fantacy;
 margin-left:10px;
 font-size:20px;
+@media (max-width: 768px) {
+  background-color:#F8F9F9 !important;
+  max-width:100%;
+  margin:0px;
+}
+@media (max-width: 458px) {
+ 
+}
 `;
 
 function PortFolio(props) {
@@ -555,11 +593,9 @@ function PortFolio(props) {
         {/* Tech Logo carousel */}
 
         <MainCarouselDiv>
-<TypographyDiv>
           <TextDiv5>
             Technologies
           </TextDiv5>
-          </TypographyDiv>
 
           <TechLogos>
             <TechCarousel
@@ -648,7 +684,7 @@ function PortFolio(props) {
           </TextDiv6>
           <center>
           <ResumeContent><Spandiv>Click here to download resume</Spandiv>
-          <AResume href={`${process.env.PUBLIC_URL}/Sethukumar_Resume.pdf`} target='_blank' download>Resume</AResume>
+          <AResume href={`${process.env.PUBLIC_URL}/Sethukumar_Resume.pdf`} target='_blank' download><b>Resume</b></AResume>
           </ResumeContent>
           </center>
         </ResumeSectionDiv>

@@ -24,6 +24,26 @@ import AboutPage from "./AboutPage";
 import HireMe from './HireMe';
 
 
+const MainDiv = styled.main`
+margin-top:75px;
+@media (max-width: 768px) {
+  background-color:#F8F9F9 !important;
+    width:100%;
+    margin:0px;
+    overflow:hidden;
+
+  }
+  @media (max-width: 458px) {
+    width:100%;
+  }
+  @media (width: 375px) {
+    width:100%;
+  }
+  @media (width: 425px) {
+    width:100%;
+  }
+
+`;
 
 const StyledHeaderWrapper = styled.div`
   background-color:#212F3D;
@@ -41,23 +61,30 @@ const MenuIconButton = styled.div`
   color:white;
   @media (max-width: 768px) {
     display:flex;
-    margin-right: 720px;
+    max-width:100%;
     margin-top: 12px;
   }
   @media (max-width: 458px) {
-    margin-right: 280px;
+    margin-right: 90%;
   }
   @media (width: 375px) {
-    margin-right: 320px;
+    // margin-right: 320px;
   }
   @media (width: 425px) {
-    margin-right: 380px;
+    // margin-right: 380px;
   }
 
 `;
 const CloseIconButton = styled.div`
   margin-left: 10px;
   margin-top: 8px;
+  @media (max-width: 768px) {
+    max-width:100%;
+    margin:0px;
+   }
+   @media (max-width: 458px) {
+   }
+  
 `;
 
 const Nav = styled.nav`
@@ -74,18 +101,22 @@ const Nav = styled.nav`
 const Ul = styled.ul`
   list-style: none;
   @media (max-width: 768px) {
-  }
-  @media (max-width: 458px) {
-  }
+    max-width:100%;
+    margin:0px;
+   }
+   @media (max-width: 458px) {
+   }
 `;
 
 const Li = styled.li`
   display: inline-block;
   padding: 4px 10px;
   @media (max-width: 768px) {
-}
-@media (max-width: 458px) {
-}
+    max-width:100%;
+    margin:0px;
+   }
+   @media (max-width: 458px) {
+   }
 `;
 
 const A = styled.a`
@@ -102,6 +133,8 @@ const A = styled.a`
   text-decoration: none;
   @media (max-width: 768px) {
     color: 	darkslategray;
+    max-width:100%;
+    margin:0px;
   }
     @media (max-width: 458px) {
      color: darkslategray;
@@ -112,26 +145,31 @@ const A = styled.a`
 const DrawerNav = styled.nav`
 display:block;
 @media (max-width: 768px) {
-    margin-right:50px;
-}
-@media (max-width: 458px) {
-}
+  max-width:100%;
+  margin:20px;
+ }
+ @media (max-width: 458px) {
+ }
 `;
 
 const DrawerLi = styled.li`
 @media (max-width: 768px) {
-    padding:10px;
-}
-@media (max-width: 458px) {
-}
+  max-width:100%;
+  margin:0px;
+  padding:10px;
+ }
+ @media (max-width: 458px) {
+ }
 `;
 
 const DrawerUl = styled.ul`
 list-style: none;
 @media (max-width: 768px) {
-}
-@media (max-width: 458px) {
-}
+  max-width:100%;
+  margin:0px;
+ }
+ @media (max-width: 458px) {
+ }
 `;
 
 const Logo = styled.img`
@@ -171,6 +209,7 @@ export function Home(props) {
 
   return (
     <React.Fragment>
+      <MainDiv>
       <StyledHeaderWrapper>
 
         <StyledHeader>
@@ -239,7 +278,7 @@ export function Home(props) {
       </Router>
 
 
-
+      </MainDiv>
     </React.Fragment>
   );
 }

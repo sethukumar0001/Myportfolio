@@ -18,15 +18,20 @@ const MainDiv = styled.main`
 // background-color:gray;
 margin-top:75px;
 @media (max-width: 768px) {
+  // background-color:red;
     width:100%;
-    margin:15px;
+    margin:0px;
+    overflow:hidden;
 
   }
   @media (max-width: 458px) {
+    width:100%;
   }
   @media (width: 375px) {
+    width:100%;
   }
   @media (width: 425px) {
+    width:100%;
   }
 
 `;
@@ -43,7 +48,7 @@ float:left;
 
 @media (max-width: 768px) {
     width:90%;
-    margin:0px;
+    margin:16px;
     // margin-right:50px;
 
   }
@@ -219,7 +224,7 @@ width:500px;
 
 @media (max-width: 768px) {
     width:90%;
-    margin:0px;
+    margin:16px;
     margin-top:15px;
     // margin-right:50px;
 
