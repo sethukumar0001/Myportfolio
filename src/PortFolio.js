@@ -520,16 +520,15 @@ function PortFolio(props) {
             <center>
               <TextDiv>
                 Hi I'm Sethu Kumar
-                 </TextDiv>
+              </TextDiv>
               <TextDiv1>
                 React Developer (React, Redux, Mobx, Html, Css, Javascript)(1.6 yrs)
-                 </TextDiv1>
+              </TextDiv1>
             </center>
           </CardContentDiv>
         </MainCard>
 
         {/* Work Experience */}
-
         <WorkExperienceMainDiv>
           <TypographyDiv>
             <TextDiv3>
@@ -591,7 +590,6 @@ function PortFolio(props) {
         </WorkExperienceMainDiv>
 
         {/* Tech Logo carousel */}
-
         <MainCarouselDiv>
           <TextDiv5>
             Technologies
