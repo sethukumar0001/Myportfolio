@@ -358,6 +358,7 @@ const EductionMainDiv = styled.div`
 const EducationDiv = styled.div`
 margin-top:25vh !important;
 @media (max-width: 768px) {
+  margin-top:5vh !important;
   max-width:100%;
   margin-right: 46px;
   margin:0px;
@@ -384,6 +385,7 @@ margin-right:10px !important;
 const MainCarousel = styled(Carousel)`
 // background:#EBF5FB !important;
 @media (max-width: 768px) {
+  margin-left:6%;
   width:90%;
 }
 @media (max-width: 458px) {
