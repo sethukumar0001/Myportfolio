@@ -346,8 +346,6 @@ width:50vh !important;
 
 //education div style
 const EductionMainDiv = styled.div`
-float:unset;
-margin-top:20px;
 @media (max-width: 768px) {
   max-width:100%;
   margin:0px;
@@ -358,7 +356,7 @@ margin-top:20px;
 `;
 
 const EducationDiv = styled.div`
-margin-top:20vh;
+margin-top:25vh !important;
 @media (max-width: 768px) {
   max-width:100%;
   margin-right: 46px;
@@ -406,7 +404,7 @@ const ImageDiv = styled.img`
 width: 14.5vh !important;
 height: 12vh;
 position: absolute;
-left: 43.7vh;
+left: 50vh;
 margin-top: 4vh;
 @media (max-width: 768px) {
   display:none !important;
@@ -613,6 +611,7 @@ function PortFolio(props) {
           </TechLogos>
         </MainCarouselDiv>
         <Break />
+        
 
         {/* Education Carousel div */}
 
