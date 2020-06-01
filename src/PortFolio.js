@@ -14,6 +14,7 @@ import ReactJs from './_assets/react.png';
 import Redux from './_assets/redux.png';
 import Mobx from './_assets/mobx.png';
 import Html from './_assets/html.png';
+import Jquery from './_assets/jquery.png';
 import {  Link } from "react-router-dom";
 
 
@@ -522,7 +523,7 @@ function PortFolio(props) {
                 Hi I'm Sethu Kumar
               </TextDiv>
               <TextDiv1>
-                React Developer (React, Redux, Mobx, Html, Css, Javascript)(1.6 yrs)
+                React Developer (React, Redux, Mobx, Html, Css, Javascript ,Jquery)(1.6 yrs)
               </TextDiv1>
             </center>
           </CardContentDiv>
@@ -609,6 +610,7 @@ function PortFolio(props) {
               <TechImages src={Redux} />
               <TechImages src={Mobx} />
               <TechImages src={Html} />
+              <TechImages src={Jquery} />
             </TechCarousel>
           </TechLogos>
         </MainCarouselDiv>
