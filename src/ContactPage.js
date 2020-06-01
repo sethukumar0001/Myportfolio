@@ -158,6 +158,7 @@ margin-right: 40px;
   }
 `;
 const MailIconDiv = styled(MailIcon)`
+float:left;
 color:white;
 margin-top:2px;
 margin-left:4px;
